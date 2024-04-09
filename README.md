@@ -25,3 +25,13 @@ Passo a passo para utilizar:
 5) Abra o postman e crie uma request POST para a url: http://127.0.0.1:5000/predict e um body raw json com um dos exemplos do arquivo sample_input.json.
 
 6) Clique em send para mandar a requisição e receber a response com um inteiro representando a classe predita.
+
+* Docker
+
+7) Build the container:
+    * docker build -t aula-ferr-ml .
+
+8) Run the container:
+    * docker run -p 8080:5000 aula-ferr-ml
+
+9) Abra o postman e crie uma request POST para a url: http://127.0.0.1:8080/predict e um body raw json com um dos exemplos do arquivo sample_input.json.
