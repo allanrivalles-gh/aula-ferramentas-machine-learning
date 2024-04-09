@@ -17,21 +17,24 @@ Passo a passo para utilizar:
 * Windows
     * .venv/Scripts/activate
 
-3) Execute as celulas do notebook model_train.ipynb para gerar um modelo treinado
+3) Instale as dependencias:
+    * pip install -r requirements.txt
 
-4) Rode a aplicação flask:
+4) Execute as celulas do notebook model_train.ipynb para gerar um modelo treinado
+
+5) Rode a aplicação flask:
     * python flask_app.py
     
-5) Abra o postman e crie uma request POST para a url: http://127.0.0.1:5000/predict e um body raw json com um dos exemplos do arquivo sample_input.json.
+6) Abra o postman e crie uma request POST para a url: http://127.0.0.1:5000/predict e um body raw json com um dos exemplos do arquivo sample_input.json.
 
-6) Clique em send para mandar a requisição e receber a response com um inteiro representando a classe predita.
+7) Clique em send para mandar a requisição e receber a response com um inteiro representando a classe predita.
 
 * Docker
 
-7) Build the container:
+8) Build the container:
     * docker build -t aula-ferr-ml .
 
-8) Run the container:
+9) Run the container:
     * docker run -p 8080:5000 aula-ferr-ml
 
-9) Abra o postman e crie uma request POST para a url: http://127.0.0.1:8080/predict e um body raw json com um dos exemplos do arquivo sample_input.json.
+10) Abra o postman e crie uma request POST para a url: http://127.0.0.1:8080/predict e um body raw json com um dos exemplos do arquivo sample_input.json.
